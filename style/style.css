@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+h1{
+  font-size: 50px;
+}
+
 .hide{
   display: none;
 }
@@ -14,26 +18,25 @@
 
 .dropCont{
   position: absolute;
-  height: 250px;
   width: 250px;
   left: 21%;
   padding: 10px 5px;
   border: 2px solid black;
+  background-color: white;
 }
 
 .sec{
-  left: 28%;
+  left: 408px;
 }
 
 .third{
-  left: 42%;
-  height: 150px;
+  left: 640px;
 }
 .fourth{
-  left: 49%;
+  left: 740px;
 }
 .fifth{
-  left: 55%;
+  left: 840px;
 }
 
 .dropCont li{
@@ -116,4 +119,32 @@ header{
 }
 .download:hover{
   background-color: grey;
+}
+
+
+main{
+  display: flex;
+  justify-content: space-between;
+}
+.jumbo{
+  padding: 50px 0;
+  padding-right: 25%;
+  width:100%;
+}
+.jumbo *{
+  margin-top: 40px;
+}
+
+.tNumber{
+  display: flex;
+}
+
+.mainImg{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.mainImg img{
+  max-width: 400px;
 }
