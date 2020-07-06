@@ -5,12 +5,39 @@
   box-sizing: border-box;
 }
 
-.predrop{
+.hide{
   display: none;
 }
+.p_drop{
+  position: relative;
+}
 
-.drop:hover .predrop{
-  display: block;
+.dropCont{
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  left: 21%;
+  padding: 10px 5px;
+  border: 2px solid black;
+}
+
+.sec{
+  left: 28%;
+}
+
+.third{
+  left: 42%;
+  height: 150px;
+}
+.fourth{
+  left: 49%;
+}
+.fifth{
+  left: 55%;
+}
+
+.dropCont li{
+  padding: 10px 5px;
 }
 
 a{
@@ -66,4 +93,5 @@ header{
 
 .mainbarleft span{
   padding: 0 15px;
+  cursor: pointer;
 }
