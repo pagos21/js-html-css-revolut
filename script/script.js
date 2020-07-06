@@ -2,19 +2,13 @@ console.log("Here!");
 $(document).ready(function(){
   $(".p_drop").mouseenter(
     function(){
-      $(this).next(".dropCont").show("fast");
+      $(this).children(".dropCont").show("fast");
     }
   )
 
-
-  $(".dropCont").mouseleave(
+  $(".p_drop").mouseleave(
     function(){
-      $(this).hide("fast");
-    }
-  )
-  $(".mainbarleft").mouseleave(
-    function(){
-      $(".dropCont").hide("fast");
+      $(this).children(".dropCont").hide("fast");
     }
   )
 
