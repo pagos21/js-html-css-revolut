@@ -40,6 +40,15 @@
   padding: 10px 5px;
 }
 
+.mainbarleft span{
+  color: grey;
+
+}
+
+.mainbarleft span:hover{
+  color: black;
+}
+
 a{
   text-decoration: none;
   color: grey;
@@ -94,4 +103,17 @@ header{
 .mainbarleft span{
   padding: 0 15px;
   cursor: pointer;
+}
+
+.download{
+  cursor: pointer;
+  color: white;
+  border-radius: 10px;
+  background-color: black;
+  font-weight: bold;
+  padding: 10px;
+  transition: all .5s;
+}
+.download:hover{
+  background-color: grey;
 }
