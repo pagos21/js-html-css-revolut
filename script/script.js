@@ -15,12 +15,17 @@ $(document).ready(function(){
   $(".hiddenBar").click(
     function(){
       $(".hiddenMenu").fadeIn("slow");
+
     }
   )
 
   $(".close").click(
     function(){
       $(".hiddenMenu").fadeOut("slow");
+      if(this.class != 'close') {
+        $(".hiddenMenu").hide();
+      }
+
     }
   )
 
@@ -28,10 +33,15 @@ $(document).ready(function(){
     function(){
       $(this).children(".hiddenParag").slideToggle(1000);
       $(this).children("i").toggle("fast");
-
-
     }
   )
 
+  $(document).mouseup(function (e){
+	var container = $(".hiddenMenu");
+	if (!container.is(e.target) && container.has(e.target).length === 0){
+		container.fadeOut();
+
+	}
+});
 
 })
