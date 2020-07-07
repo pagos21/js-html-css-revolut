@@ -35,13 +35,4 @@ $(document).ready(function(){
       $(this).children("i").toggle("fast");
     }
   )
-
-  $(document).mouseup(function (e){
-	var container = $(".hiddenMenu");
-	if (!container.is(e.target) && container.has(e.target).length === 0){
-		container.fadeOut();
-
-	}
-});
-
 })
