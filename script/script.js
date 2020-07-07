@@ -12,5 +12,26 @@ $(document).ready(function(){
     }
   )
 
+  $(".hiddenBar").click(
+    function(){
+      $(".hiddenMenu").fadeIn("slow");
+    }
+  )
+
+  $(".close").click(
+    function(){
+      $(".hiddenMenu").fadeOut("slow");
+    }
+  )
+
+  $(".hiddenMenuArts").click(
+    function(){
+      $(this).children(".hiddenParag").slideToggle(1000);
+      $(this).children("i").toggle("fast");
+
+
+    }
+  )
+
 
 })
