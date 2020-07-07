@@ -1,0 +1,278 @@
+/* COMMON */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1{
+  font-size: 50px;
+}
+
+.hide{
+  display: none;
+}
+.hiddenBar{
+  display: none;
+}
+.p_drop{
+  position: relative;
+}
+
+.dropCont{
+  position: absolute;
+  width: 250px;
+  left: 21%;
+  padding: 10px 5px;
+  background-color: white;
+  box-shadow: 5px 10px 18px #888888;
+}
+
+.dropCont li{
+  padding: 10px 5px;
+}
+
+.mainbarleft span{
+  color: grey;
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+.mainbarleft span:hover{
+  color: black;
+}
+
+a{
+  text-decoration: none;
+  color: grey;
+}
+
+a:hover{
+  color: black;
+}
+
+li{
+  list-style: none;
+}
+
+.big_cont{
+  padding: 0 10%;
+}
+
+header{
+  background-color: #ccc;
+  height: 50px;
+}
+
+.h_leftright{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+  padding: 0 10%;
+}
+
+.h_left a, .h_right a{
+  padding: 0 15px;
+  font-weight: bold;
+}
+
+.main_bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  margin: 20px 0;
+}
+
+.logo{
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+  padding-right: 50px;
+}
+
+.download{
+  cursor: pointer;
+  color: white;
+  border-radius: 10px;
+  background-color: black;
+  font-weight: bold;
+  padding: 10px;
+  transition: all .5s;
+}
+.download:hover{
+  background-color: grey;
+}
+
+
+main{
+  display: flex;
+  justify-content: space-between;
+}
+.jumbo{
+  padding: 50px 0;
+  padding-right: 25%;
+  width:100%;
+}
+.jumbo *{
+  margin-top: 40px;
+}
+
+.tNumber{
+  display: flex;
+}
+
+.mainImg{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.mainImg img{
+  max-width: 400px;
+}
+
+.hiddenMenu{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  padding: 20px;
+  width: 100%;
+  height: auto;
+  background: white;
+  color: grey;
+  box-shadow: 5px 10px 18px #888888;
+
+}
+
+.hiddenMenuArts:hover span{
+  color: black;
+}
+
+.hiddenMenuArts{
+  padding-top: 50px;
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+
+.right{
+  float: right;
+}
+
+.hiddenParag li{
+  padding: 25px 10px;
+}
+
+
+.close {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: grey;
+    font-size: 35px;
+    text-decoration: none;
+}
+
+footer{
+  display: none;
+
+}
+
+/* MEDIA QUERY */
+/* 4 md */
+
+@media all and (min-width: 200px) and (max-width: 1023px) {
+  .mainbarleft{
+    display: none;
+  }
+  .download{
+    display: none;
+  }
+  .downloadBottom{
+    display: block;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+    background-color: black;
+    font-weight: bold;
+    padding: 10px;
+    transition: all .5s;
+  }
+  .hiddenBar{
+    display: block;
+    cursor: pointer;
+  }
+  footer{
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    position: fixed;
+    bottom: 0;
+    background: white;
+    padding: 10px 0;
+    width: 100%;
+    box-shadow: 5px 10px 18px #888888;
+  }
+
+
+  .tNumber{
+    display: none;
+  }
+  .jumbo p:last-child{
+    display: none;
+  }
+  main{
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20%;
+    padding-right: 0;
+  }
+}
+
+
+@media all and (max-width:1080px) and (min-width:1024px) {
+  .mainbarleft{
+    display: none;
+  }
+  .download{
+    display: none;
+  }
+  .downloadBottom{
+    display: block;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+    background-color: black;
+    font-weight: bold;
+    padding: 10px;
+    transition: all .5s;
+  }
+  .hiddenBar{
+    display: block;
+    cursor: pointer;
+  }
+
+
+  footer{
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    position: fixed;
+    bottom: 0;
+    background: white;
+    padding: 10px 0;
+    width: 100%;
+    box-shadow: 5px 10px 18px #888888;
+  }
+}
