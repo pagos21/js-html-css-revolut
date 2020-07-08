@@ -48,5 +48,28 @@ $(document).ready(function(){
 });
 
 
-console.log();
 })
+
+
+// Test per il controllo dei numeri
+var bottone = document.getElementById("start");
+
+bottone.disabled = true
+
+var num = 0;
+function checkNum(event){
+  var inputNum = document.getElementById("input").value;
+  console.log(inputNum);
+  console.log(event.keyCode);
+  console.log(inputNum.length);
+
+  if (inputNum.length > 5) {
+    bottone.disabled = false;
+    $("#start").removeClass("startDisabled").addClass("start");
+    console.log("Disabled");
+  } else {
+    bottone.disabled = true;
+    $("#start").removeClass("start").addClass("startDisabled");
+
+  }
+}

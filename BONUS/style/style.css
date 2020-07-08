@@ -103,6 +103,28 @@ header{
   padding: 10px;
   transition: all .5s;
 }
+.start{
+  cursor: pointer;
+  color: white;
+  border-radius: 10px;
+  background-color: black;
+  font-weight: bold;
+  padding: 10px;
+  transition: all .5s;
+}
+.startDisabled{
+  cursor: not-allowed;
+  color: grey;
+  border-radius: 10px;
+  background-color: black;
+  font-weight: bold;
+  padding: 10px;
+  transition: all .5s;
+  opacity: 0.8;
+}
+.start:hover{
+  background-color: grey;
+}
 .download:hover{
   background-color: grey;
 }
