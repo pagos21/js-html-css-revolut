@@ -22,10 +22,6 @@ $(document).ready(function(){
   $(".close").click(
     function(){
       $(".hiddenMenu").fadeOut("slow");
-      if(this.class != 'close') {
-        $(".hiddenMenu").hide();
-      }
-
     }
   )
 

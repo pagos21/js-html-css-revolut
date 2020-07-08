@@ -103,6 +103,30 @@ header{
   padding: 10px;
   transition: all .5s;
 }
+
+.start{
+  cursor: pointer;
+  color: white;
+  border-radius: 10px;
+  background-color: black;
+  font-weight: bold;
+  padding: 10px;
+  transition: all .5s;
+}
+
+.startDisabled{
+  cursor: not-allowed;
+  color: grey;
+  border-radius: 10px;
+  background-color: black;
+  font-weight: bold;
+  padding: 10px;
+  transition: all .5s;
+  opacity: 0.8;
+}
+.start:hover{
+  background-color: grey;
+}
 .download:hover{
   background-color: grey;
 }
@@ -119,6 +143,14 @@ main{
 }
 .jumbo *{
   margin-top: 40px;
+}
+
+select{
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: white;
+  padding: 0 10px;
+  margin: 0 10px;
 }
 
 .tNumber{
@@ -188,7 +220,11 @@ footer{
 /* 4 md */
 
 @media all and (min-width: 200px) and (max-width: 1023px) {
-  .mainbarleft{
+
+  header{
+    display: none;
+  }
+  .mainbarleft :not(.logo){
     display: none;
   }
   .download{
@@ -240,6 +276,9 @@ footer{
 
 
 @media all and (max-width:1080px) and (min-width:1024px) {
+  header{
+    display: none;
+  }
   .mainbarleft{
     display: none;
   }
