@@ -56,7 +56,6 @@ var bottone = document.getElementById("start");
 
 bottone.disabled = true
 
-var num = 0;
 function checkNum(event){
   var inputNum = document.getElementById("input").value;
   console.log(inputNum);
@@ -66,7 +65,7 @@ function checkNum(event){
   if (inputNum.length > 5) {
     bottone.disabled = false;
     $("#start").removeClass("startDisabled").addClass("start");
-    console.log("Disabled");
+    console.log("Enabled");
   } else {
     bottone.disabled = true;
     $("#start").removeClass("start").addClass("startDisabled");
