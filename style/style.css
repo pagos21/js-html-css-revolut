@@ -275,13 +275,14 @@ footer{
 }
 
 
-@media all and (max-width:1080px) and (min-width:1024px) {
+@media all and (max-width: 1080px) and (min-width: 1024px) {
   header{
     display: none;
   }
-  .mainbarleft{
+  .mainbarleft :not(.logo){
     display: none;
   }
+
   .download{
     display: none;
   }
